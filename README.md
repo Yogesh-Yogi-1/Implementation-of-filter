@@ -33,7 +33,7 @@ End the program.
 
 ### 1. Smoothing Filters
 
-i) Using Averaging Filter
+#### i) Using Averaging Filter
 ```Python
 
 import cv2
@@ -55,7 +55,7 @@ plt.axis("off")
 plt.show()
 
 ```
-ii) Using Weighted Averaging Filter
+#### ii) Using Weighted Averaging Filter
 ```Python
 kernel1=np.array([[1,2,1],[2,4,2],[1,2,1]])/16
 image3=cv2.filter2D(image2,-1,kernel1)
@@ -70,7 +70,7 @@ plt.title("Weighted Average Filter Image")
 plt.axis("off")
 plt.show()
 ```
-iii) Using Gaussian Filter
+#### iii) Using Gaussian Filter
 ```Python
 gaussian_blur=cv2.GaussianBlur(image2,(33,33),0,0)
 plt.figure(figsize=(9,9))
@@ -84,7 +84,7 @@ plt.title("Gaussian Blur")
 plt.axis("off")
 plt.show()
 ```
-iv)Using Median Filter
+#### iv)Using Median Filter
 ```Python
 median=cv2.medianBlur(image2,13)
 plt.figure(figsize=(9,9))
@@ -100,7 +100,7 @@ plt.show()
 ```
 
 ### 2. Sharpening Filters
-i) Using Laplacian Linear Kernal
+#### i) Using Laplacian Linear Kernal
 ```Python
 kernel2=np.array([[-1,-1,-1],[2,-2,1],[2,1,-1]])
 image3=cv2.filter2D(image2,-1,kernel2)
@@ -115,7 +115,7 @@ plt.title("Laplacian Kernel")
 plt.axis("off")
 plt.show()
 ```
-ii) Using Laplacian Operator
+#### ii) Using Laplacian Operator
 ```Python
 laplacian=cv2.Laplacian(image2,cv2.CV_64F)
 plt.figure(figsize=(9,9))
@@ -134,22 +134,22 @@ plt.show()
 ### 1. Smoothing Filters
 </br>
 
-i) Using Averaging Filter
+#### i) Using Averaging Filter
 ![image](https://github.com/user-attachments/assets/6986940b-0375-4e6e-814c-8fda1ffb0e76)
 
 </br>
 
-ii)Using Weighted Averaging Filter
+#### ii)Using Weighted Averaging Filter
 ![image](https://github.com/user-attachments/assets/58174389-2cb5-45f7-9491-85a2cc41f1e6)
 
 </br>
 
-iii)Using Gaussian Filter
+#### iii)Using Gaussian Filter
 ![image](https://github.com/user-attachments/assets/1ad661a7-dae6-4aac-98e6-847d7e22fba9)
 
 </br>
 
-iv) Using Median Filter
+#### iv) Using Median Filter
 ![image](https://github.com/user-attachments/assets/08c2aaa4-beab-4865-b96f-19e87e04154f)
 
 </br>
@@ -157,12 +157,12 @@ iv) Using Median Filter
 ### 2. Sharpening Filters
 </br>
 
-i) Using Laplacian Kernal
+#### i) Using Laplacian Kernal
 ![image](https://github.com/user-attachments/assets/76e4ab7a-a18e-45ad-b2da-e38bccd4dda1)
 
 </br>
 
-ii) Using Laplacian Operator
+#### ii) Using Laplacian Operator
 ![image](https://github.com/user-attachments/assets/3c6d6e91-4bb6-4330-b597-35f0dfe98ad2)
 
 </br>
